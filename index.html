@@ -13,11 +13,34 @@
     }
 
     .card {
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    li {
+      transition: 0.3s;
+    }
+
+    li:hover {
+      transform: scale(1.1);
+      color: #ff4da6;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+       opacity: 1;
+       transform: translateY(0);
+      }
+    }
 
     h1 {
       color: #cb0066;
@@ -47,7 +70,6 @@
     <p>大学1年次　TDR 31回</p>
     <p>大学2年次　IFT 73回</p>
     <p>大学3年次　推しの現場 60回</p>
-    <a href="https://www.youtube.com/watch?v=XncVp3UHP6U&list=PLAZngf0lrwwxj1QmLfTkp9TiHeJYa2HWV&pp=sAgC">キャバレー動画</a>
   </div>
 
   <div class="card"> 
