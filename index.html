@@ -20,6 +20,14 @@
       margin-bottom: 20px;
     }
 
+    ul {
+      list-style-type: none;
+    }
+
+    li::before {
+      content: "💙 ";
+    }
+
     li {
       transition: 0.3s;
     }
@@ -27,6 +35,10 @@
     li:hover {
       transform: scale(1.1);
       color: #ff4da6;
+    }
+    
+    li:hover::before {
+      content: "💖 ";
     }
 
     .fade-in {
